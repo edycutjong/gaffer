@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/assets/icon-animated.svg" width="144" height="144" alt="Gaffer"></p>
+<p align="center"><img src="docs/assets/icon-512.png" width="144" height="144" alt="Gaffer"></p>
 
 # Gaffer — the offline AI co-commentator that runs on your peers' hardware
 
@@ -7,10 +7,14 @@
 > **Built:** a working P2P inference-offload runtime with mid-sentence failover, `pear://` model sharing, a broadcast-style HUD, a reproducible benchmark, an offline-proof script and **220 passing tests** (incl. real-swarm integration).
 
 <div align="center">
-  <!-- animated, fully self-contained (fonts embedded) — PNG fallback: docs/assets/readme-hero.png -->
-  <img src="docs/assets/readme-hero-animated.svg" alt="Gaffer — offline AI co-commentator with P2P inference offload" width="100%">
+  <!-- static PNG for reliable GitHub rendering (camo strips SVG animation); animated: docs/assets/readme-hero-animated.svg -->
+  <img src="docs/assets/readme-hero.png" alt="Gaffer — offline AI co-commentator with P2P inference offload" width="100%">
 
   <br/><br/>
+
+  [![CI/CD Pipeline](https://github.com/edycutjong/gaffer/actions/workflows/ci.yml/badge.svg)](https://github.com/edycutjong/gaffer/actions/workflows/ci.yml)
+  [![CodeQL](https://github.com/edycutjong/gaffer/actions/workflows/codeql.yml/badge.svg)](https://github.com/edycutjong/gaffer/actions/workflows/codeql.yml)
+  [![Deploy Pages](https://github.com/edycutjong/gaffer/actions/workflows/pages.yml/badge.svg)](https://edycutjong.github.io/gaffer/)
 
   ![Track](https://img.shields.io/badge/Tether_DevCup_2026-QVAC_track-00E5FF?style=for-the-badge)
   ![Tests](https://img.shields.io/badge/tests-220_passing-B6FF3D?style=for-the-badge)
@@ -30,6 +34,8 @@
   <img src="docs/assets/hud-live.png" alt="Live commentary HUD — the feed switches from ⌂ local 5.9 tok/s to ⇄ peer 47 tok/s" width="100%">
   <br/><br/>
   <img src="docs/assets/hud-peer-link.png" alt="Peer offload view — ×7.8 speedup over an encrypted Secretstream link" width="100%">
+  <br/><br/>
+  <img src="docs/assets/hud-offline-proof.png" alt="Offline proof — the full commentary loop runs with the network guard active; any non-local connection throws NetworkViolationError" width="100%">
 </div>
 
 > **The magic moment:** a weak client crawls at ~6 tok/s. A laptop joins the same match topic — and the gauge **surges to ~47 tok/s** with a lime `⇄ BOOSTED BY PEER` badge. Kill the laptop mid-sentence and the sentence **finishes anyway**, token-exact, from the local engine. All of it with the internet unplugged.

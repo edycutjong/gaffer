@@ -7,21 +7,20 @@
 
 ```mermaid
 flowchart LR
-  subgraph Client["Weak client — cli.js --client / HUD"
-]
-    FEED[MatchSimulator\nseeded, deterministic] --> CE[CommentaryEngine\npacing · focus · verbosity]
-    CE --> PR[prompt.js\nsystem + windowed history]
+  subgraph Client["Weak client — cli.js --client / HUD"]
+    FEED["MatchSimulator<br/>seeded, deterministic"] --> CE["CommentaryEngine<br/>pacing · focus · verbosity"]
+    CE --> PR["prompt.js<br/>system + windowed history"]
     PR --> RT{InferenceRouter}
-    RT -- LOCAL / FALLBACK --> LE[engine local\nqvac | sim]
+    RT -- "LOCAL / FALLBACK" --> LE["engine local<br/>qvac / sim"]
     RT -- OFFLOADED --> WIRE
   end
   subgraph Provider["Provider — cli.js --provider"]
-    PN[ProviderNode] --> PE[engine\nqvac | sim]
+    PN[ProviderNode] --> PE["engine<br/>qvac / sim"]
   end
-  WIRE[protocol.js frames\nover Hyperswarm socket\nNoise Secretstream E2E] --> PN
-  DHT([HyperDHT\ntopic = sha256 of match id]) -.discovery.- RT & PN
-  DRIVE[(Hyperdrive\npear:// GGUF)] -.modelshare.js.-> LE & PE
-  RT --> MET[metrics.js\ntok/s · p50/p95] --> HUD[HUD gauge / bench / README numbers]
+  WIRE["protocol.js frames<br/>over Hyperswarm socket<br/>Noise Secretstream E2E"] --> PN
+  DHT(["HyperDHT<br/>topic = sha256 of match id"]) -.discovery.- RT & PN
+  DRIVE[("Hyperdrive<br/>pear:// GGUF")] -.modelshare.js.-> LE & PE
+  RT --> MET["metrics.js<br/>tok/s · p50/p95"] --> HUD["HUD gauge / bench / README numbers"]
 ```
 
 ## Module map (lib/)
