@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",
-    "eslint": "^9.39.2",
+    "eslint": "^10.6.0",
     "hyperdht": "^6.33.0"
   },
   "engines": {
