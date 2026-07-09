@@ -1,39 +1,37 @@
-
-
 <div align="center">
 
-<img src="docs/assets/icon-animated.svg" width="144" height="144" alt="Gaffer">
+  <img src="docs/assets/icon-animated.svg" width="144" height="144" alt="Gaffer">
 
-# Gaffer — the offline AI co-commentator that runs on your peers' hardware
+  <h1>Gaffer ၊၊||၊</h1>
+  <p><em>The offline AI co-commentator that runs on your peers' hardware.</em></p>
 
-**Problem:** expert match commentary dies the moment the network drops — and the fans who most need an explainer carry the weakest phones.<br/>
-**Solution:** Gaffer streams tactical commentary from a model **on your own device** (QVAC), and when your device is too weak it **borrows a laptop peer's compute over an encrypted P2P link** (Pear stack) — zero cloud, zero API keys.<br/>
-**Built:** a working P2P inference-offload runtime with mid-sentence failover, `pear://` model sharing, a broadcast-style HUD, a reproducible benchmark, an offline-proof script and **220 passing tests** (incl. real-swarm integration).
+  <img src="docs/assets/readme-hero-animated.svg" alt="Gaffer — offline AI co-commentator with P2P inference offload" width="100%">
 
-<img src="docs/assets/readme-hero-animated.svg" alt="Gaffer — offline AI co-commentator with P2P inference offload" width="100%">
-
-  <br/><br/>
-
-  [![Watch the 3-min demo](https://img.shields.io/badge/Watch_the_3--min_demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/PuQPRP3jttA)
-  [![Pitch deck](https://img.shields.io/badge/Pitch_deck-live-00E5FF?style=for-the-badge)](https://edycutjong.github.io/gaffer/docs/pitch/)
-
-  [![CI/CD Pipeline](https://github.com/edycutjong/gaffer/actions/workflows/ci.yml/badge.svg)](https://github.com/edycutjong/gaffer/actions/workflows/ci.yml)
-  [![CodeQL](https://github.com/edycutjong/gaffer/actions/workflows/codeql.yml/badge.svg)](https://github.com/edycutjong/gaffer/actions/workflows/codeql.yml)
-  [![Deploy Pages](https://github.com/edycutjong/gaffer/actions/workflows/pages.yml/badge.svg)](https://edycutjong.github.io/gaffer/)
-
+  [![Demo Video](https://img.shields.io/badge/▶_Demo-Video-EF4444?style=for-the-badge)](https://youtu.be/PuQPRP3jttA)
+  [![Pitch Deck](https://img.shields.io/badge/📊_Pitch-Deck-8b5cf6?style=for-the-badge)](https://edycutjong.github.io/gaffer/docs/pitch/)
+  [![Landing Page](https://img.shields.io/badge/🌐_Landing-Page-B6FF3D?style=for-the-badge)](https://edycutjong.github.io/gaffer/landing)
   ![Track](https://img.shields.io/badge/Tether_DevCup_2026-QVAC_track-00E5FF?style=for-the-badge)
-  ![Tests](https://img.shields.io/badge/tests-220_passing-B6FF3D?style=for-the-badge)
-  ![License](https://img.shields.io/badge/license-Apache--2.0-8b5cf6?style=for-the-badge)
 
   ![Node](https://img.shields.io/badge/Node.js_≥20-339933?style=flat&logo=node.js&logoColor=white)
   ![QVAC](https://img.shields.io/badge/@qvac/sdk-on--device_AI-00E5FF?style=flat)
   ![Pear](https://img.shields.io/badge/Pear-Hyperswarm_·_Hyperdrive_·_HyperDHT-B6FF3D?style=flat)
   ![No Cloud](https://img.shields.io/badge/cloud_calls-0-FF3D71?style=flat)
+  ![License](https://img.shields.io/badge/license-Apache--2.0-8b5cf6?style=flat)
+
+  [![CI/CD Pipeline](https://github.com/edycutjong/gaffer/actions/workflows/ci.yml/badge.svg)](https://github.com/edycutjong/gaffer/actions/workflows/ci.yml)
+  [![CodeQL](https://github.com/edycutjong/gaffer/actions/workflows/codeql.yml/badge.svg)](https://github.com/edycutjong/gaffer/actions/workflows/codeql.yml)
+  [![Deploy Pages](https://github.com/edycutjong/gaffer/actions/workflows/pages.yml/badge.svg)](https://edycutjong.github.io/gaffer/)
 </div>
 
 ---
 
-## See it in action
+## 💡 The problem & solution
+
+**Problem:** expert match commentary dies the moment the network drops — and the fans who most need an explainer carry the weakest phones.<br/>
+**Solution:** Gaffer streams tactical commentary from a model **on your own device** (QVAC), and when your device is too weak it **borrows a laptop peer's compute over an encrypted P2P link** (Pear stack) — zero cloud, zero API keys.<br/>
+**Built:** a working P2P inference-offload runtime with mid-sentence failover, `pear://` model sharing, a broadcast-style HUD, a reproducible benchmark, an offline-proof script and **220 passing tests** (incl. real-swarm integration).
+
+## 🎬 See it in action
 
 <div align="center">
   <img src="docs/assets/hud-live.png" alt="Live commentary HUD — the feed switches from ⌂ local 5.9 tok/s to ⇄ peer 47 tok/s" width="100%">
@@ -45,26 +43,26 @@
 
 > **The magic moment:** a weak client crawls at ~6 tok/s. A laptop joins the same match topic — and the gauge **surges to ~47 tok/s** with a lime `⇄ BOOSTED BY PEER` badge. Kill the laptop mid-sentence and the sentence **finishes anyway**, token-exact, from the local engine. All of it with the internet unplugged.
 
-## Quick start (no accounts, no API keys)
+## 🚀 Quick start (no accounts, no API keys)
 
 ```bash
 git clone https://github.com/edycutjong/gaffer.git && cd gaffer
-npm install                      # pure-JS P2P deps, ~20s
+npm install  # pure-JS P2P deps, ~20s
 
 # one terminal (judge mode)
 node cli.js --standalone
 
 # … or the real thing, two terminals / two machines:
-node cli.js --provider           # terminal A — the laptop brain
-node cli.js --client             # terminal B — the weak phone
+node cli.js --provider  # terminal A — the laptop brain
+node cli.js --client    # terminal B — the weak phone
 
 # desktop HUD (requires the Pear runtime: npm i -g pear)
 pear run .
 
 # proofs
-npm test                         # 220 tests: unit + real-swarm integration
-npm run bench                    # local vs offloaded tok/s, p50/p95
-npm run verify:offline           # the whole flow with the internet blocked
+npm test                # 220 tests: unit + real-swarm integration
+npm run bench           # local vs offloaded tok/s, p50/p95
+npm run verify:offline  # the whole flow with the internet blocked
 ```
 
 The default engine is `auto`: it uses the **real QVAC engine** when `@qvac/sdk` is installed
@@ -73,7 +71,7 @@ otherwise falls back to a **clearly-labelled deterministic sim engine** so the P
 is demoable on any machine. Every surface (CLI banner, HUD badge, bench header) states
 which engine produced the tokens.
 
-## ✓ What is real vs. simulated (read this)
+## ✅ What is real vs. simulated (read this)
 
 | Layer | Status |
 |---|---|
@@ -84,7 +82,7 @@ which engine produced the tokens.
 | Match events | Deterministic simulator (seeded fixtures) — Gaffer narrates feeds; it is not a licensed data product |
 | Browser demo (`npm run demo:web`) | **Replay of a real recorded session**, badged as such — the surge is never faked |
 
-## Architecture
+## 🏗️ Architecture
 
 ```mermaid
 flowchart LR
@@ -113,7 +111,7 @@ flowchart LR
   `startQVACProvider({topic})` offered when available
 - full details: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) · [docs/COMPLEXITY.md](docs/COMPLEXITY.md)
 
-## Benchmark (reproduce: `npm run bench`)
+## 📊 Benchmark (reproduce: `npm run bench`)
 
 Measured on a cold clone (fresh `npm ci`), sim profiles (weak client 6 tok/s vs laptop
 48 tok/s, **disclosed**), 12 segments, loopback swarm — the *transport* numbers are the real
@@ -130,7 +128,7 @@ product measurement. Expect ±2% run-to-run variance:
 - **≤ 25 ms** peer connect → OFFLOADED on loopback; LAN adds network RTT
 - With `--engine qvac` the same bench measures real model tok/s on your hardware
 
-## Tests — 220, all green
+## 🧪 Tests — 220, all green
 
 `npm test` runs **220 tests** (`node --test`, zero test-framework deps): protocol framing &
 hostile-frame guards, topic derivation, deterministic match simulation, sim-engine grammar &
@@ -149,7 +147,7 @@ stubbed to fake coverage), `lib/engine.js` (its QVAC-load branches need the real
 fallback path is still tested), and `lib/modelshare.js` (real `pear://` Hyperdrive replication,
 integration-proven). Nothing is mocked to inflate a number.
 
-## Why ONLY QVAC + Pear
+## 🔌 Why ONLY QVAC + Pear
 
 1. **`completion({stream:true})` → `tokenStream`** — the streaming commentary itself. Without it: a cloud LLM, which breaks the entire premise.
 2. **`loadModel({modelSrc: 'pear://…'})`** — weights arrive from a peer, not HuggingFace; match day needs zero internet. Without it: a CDN download over dead stadium wifi.
@@ -164,7 +162,7 @@ CDN, a signalling/TURN service, and a rented GPU — plus a privacy policy askin
 you. Gaffer replaces that stack with two devices talking directly.
 Full brief: [docs/gaffer_dorahacks_submission.md](docs/gaffer_dorahacks_submission.md).
 
-## ⚠ Honest limitations
+## ⚠️ Honest limitations
 
 - **Cold start:** first model load (download/mmap/warm-up) is slow; mitigated by `pear://`
   pre-seeding (`node scripts/seed_model.js`), and documented instead of hidden.
@@ -178,14 +176,14 @@ Full brief: [docs/gaffer_dorahacks_submission.md](docs/gaffer_dorahacks_submissi
   installed); Gaffer's own delegation protocol carries the demo and the SDK-native provider is
   offered when present.
 
-## Prior work — disclosed
+## 📚 Prior work — disclosed
 
 - The streaming-`completion` loop shape follows **`tetherto/qvac-examples`**
   (`qvac-coffee-conversation`); the verified SDK surface comes from the official docs.
 - Everything else — the delegation protocol, router/failover state machine, offline guard,
   match/commentary engines, HUD, scripts and tests — was written for this hackathon, in-window.
 
-## Project structure
+## 🗂️ Project structure
 
 ```
 gaffer/
@@ -201,7 +199,7 @@ gaffer/
 └── data/fixtures/         # deterministic demo matches (3-2 thriller included)
 ```
 
-## Docs
+## 📖 Docs
 
 [DEMO.md](docs/DEMO.md) — exact two-machine demo steps & expected output ·
 [ARCHITECTURE.md](docs/ARCHITECTURE.md) ·
@@ -214,7 +212,7 @@ gaffer/
 [SEED_DATA.md](docs/SEED_DATA.md) ·
 [DoraHacks submission](docs/gaffer_dorahacks_submission.md)
 
-## License
+## 📄 License
 
 [Apache-2.0](LICENSE) © 2026 Edy Cu — as required by the Tether Developers Cup rules, and kept
 that way afterwards.
