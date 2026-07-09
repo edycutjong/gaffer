@@ -98,10 +98,10 @@
       <text class="fm" x="34" y="-1" fill="#B6FF3D" font-size="12" letter-spacing="1">BOOSTED BY PEER</text>
     </g>
     <g fill="url(#gh-wave)" transform="translate(838,352)">
-      <rect x="0"  width="8" rx="4"><animate attributeName="height" values="10;30;10" dur="0.8s" repeatCount="indefinite"/><animate attributeName="y" values="0;-20;0" dur="0.8s" repeatCount="indefinite"/></rect>
-      <rect x="14" width="8" rx="4"><animate attributeName="height" values="24;8;24" dur="0.9s" repeatCount="indefinite"/><animate attributeName="y" values="-14;0;-14" dur="0.9s" repeatCount="indefinite"/></rect>
-      <rect x="28" width="8" rx="4"><animate attributeName="height" values="16;34;16" dur="0.7s" repeatCount="indefinite"/><animate attributeName="y" values="-6;-24;-6" dur="0.7s" repeatCount="indefinite"/></rect>
-      <rect x="42" width="8" rx="4"><animate attributeName="height" values="30;12;30" dur="0.85s" repeatCount="indefinite"/><animate attributeName="y" values="-20;0;-20" dur="0.85s" repeatCount="indefinite"/></rect>
+      <rect x="0"  width="8" rx="4" height="10" y="0"><animate attributeName="height" values="10;30;10" dur="0.8s" repeatCount="indefinite"/><animate attributeName="y" values="0;-20;0" dur="0.8s" repeatCount="indefinite"/></rect>
+      <rect x="14" width="8" rx="4" height="24" y="-14"><animate attributeName="height" values="24;8;24" dur="0.9s" repeatCount="indefinite"/><animate attributeName="y" values="-14;0;-14" dur="0.9s" repeatCount="indefinite"/></rect>
+      <rect x="28" width="8" rx="4" height="16" y="-6"><animate attributeName="height" values="16;34;16" dur="0.7s" repeatCount="indefinite"/><animate attributeName="y" values="-6;-24;-6" dur="0.7s" repeatCount="indefinite"/></rect>
+      <rect x="42" width="8" rx="4" height="30" y="-20"><animate attributeName="height" values="30;12;30" dur="0.85s" repeatCount="indefinite"/><animate attributeName="y" values="-20;0;-20" dur="0.85s" repeatCount="indefinite"/></rect>
     </g>
 
     <!-- offline badge (capsule hugs the text) -->

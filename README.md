@@ -2,7 +2,7 @@
 
   <img src="docs/assets/icon-animated.svg" width="144" height="144" alt="Gaffer">
 
-  <h1>Gaffer ၊၊||၊</h1>
+  <h1>Gaffer ⚽🎙️</h1>
   <p><em>The offline AI co-commentator that runs on your peers' hardware.</em></p>
 
   <img src="docs/assets/readme-hero-animated.svg" alt="Gaffer — offline AI co-commentator with P2P inference offload" width="100%">
@@ -10,17 +10,18 @@
   [![Demo Video](https://img.shields.io/badge/▶_Demo-Video-EF4444?style=for-the-badge)](https://youtu.be/PuQPRP3jttA)
   [![Pitch Deck](https://img.shields.io/badge/📊_Pitch-Deck-8b5cf6?style=for-the-badge)](https://edycutjong.github.io/gaffer/docs/pitch/)
   [![Landing Page](https://img.shields.io/badge/🌐_Landing-Page-B6FF3D?style=for-the-badge)](https://edycutjong.github.io/gaffer/landing)
-  ![Track](https://img.shields.io/badge/Tether_DevCup_2026-QVAC_track-00E5FF?style=for-the-badge)
+
+  [![Tether Developers Cup](https://img.shields.io/badge/DoraHacks-Tether_Developers_Cup-8b5cf6?style=for-the-badge)](https://dorahacks.io/hackathon/tether-developers-cup)
+  ![Track](https://img.shields.io/badge/Track-QVAC_×_Pear-00E5FF?style=for-the-badge)
 
   ![Node](https://img.shields.io/badge/Node.js_≥20-339933?style=flat&logo=node.js&logoColor=white)
   ![QVAC](https://img.shields.io/badge/@qvac/sdk-on--device_AI-00E5FF?style=flat)
   ![Pear](https://img.shields.io/badge/Pear-Hyperswarm_·_Hyperdrive_·_HyperDHT-B6FF3D?style=flat)
   ![No Cloud](https://img.shields.io/badge/cloud_calls-0-FF3D71?style=flat)
   ![License](https://img.shields.io/badge/license-Apache--2.0-8b5cf6?style=flat)
-
-  [![CI/CD Pipeline](https://github.com/edycutjong/gaffer/actions/workflows/ci.yml/badge.svg)](https://github.com/edycutjong/gaffer/actions/workflows/ci.yml)
   [![CodeQL](https://github.com/edycutjong/gaffer/actions/workflows/codeql.yml/badge.svg)](https://github.com/edycutjong/gaffer/actions/workflows/codeql.yml)
   [![Deploy Pages](https://github.com/edycutjong/gaffer/actions/workflows/pages.yml/badge.svg)](https://edycutjong.github.io/gaffer/)
+  [![CI/CD Pipeline](https://github.com/edycutjong/gaffer/actions/workflows/ci.yml/badge.svg)](https://github.com/edycutjong/gaffer/actions/workflows/ci.yml)
 </div>
 
 ---
@@ -60,8 +61,8 @@ node cli.js --client    # terminal B — the weak phone
 pear run .
 
 # proofs
-npm test                # 220 tests: unit + real-swarm integration
-npm run bench           # local vs offloaded tok/s, p50/p95
+npm test         # 220 tests: unit + real-swarm integration
+npm run bench    # local vs offloaded tok/s, p50/p95
 npm run verify:offline  # the whole flow with the internet blocked
 ```
 
@@ -187,16 +188,16 @@ Full brief: [docs/gaffer_dorahacks_submission.md](docs/gaffer_dorahacks_submissi
 
 ```
 gaffer/
-├── cli.js                 # two-terminal demo + judge mode
-├── index.js               # importable library surface (offload helpers)
-├── lib/                   # runtime: engines, swarm, protocol, router, state, metrics…
-│   └── engines/           # qvac.js (real SDK adapter) · sim.js (disclosed dev engine)
-├── app/                   # Pear desktop HUD (live) + replay mode for browsers
-├── scripts/               # bench · verify_offline · seed · seed_model · lan_bootstrap …
-├── test/                  # 220 tests (unit + integration over a loopback DHT)
-├── docs/                  # DEMO · ARCHITECTURE · COMPLEXITY · AUDIT · pitch deck · friction log
-├── landing/               # one-page explainer
-└── data/fixtures/         # deterministic demo matches (3-2 thriller included)
+├── cli.js          # two-terminal demo + judge mode
+├── index.js        # importable library surface (offload helpers)
+├── lib/            # runtime: engines, swarm, protocol, router, state, metrics…
+│   └── engines/    # qvac.js (real SDK adapter) · sim.js (disclosed dev engine)
+├── app/            # Pear desktop HUD (live) + replay mode for browsers
+├── scripts/        # bench · verify_offline · seed · seed_model · lan_bootstrap …
+├── test/           # 220 tests (unit + integration over a loopback DHT)
+├── docs/           # DEMO · ARCHITECTURE · COMPLEXITY · AUDIT · pitch deck · friction log
+├── landing/        # one-page explainer
+└── data/fixtures/  # deterministic demo matches (3-2 thriller included)
 ```
 
 ## 📖 Docs

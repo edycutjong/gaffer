@@ -23,23 +23,23 @@
 
   <!-- live equalizer bars -->
   <g fill="url(#ga-wave)" filter="url(#ga-soft)">
-    <rect x="150" width="30" rx="15">
+    <rect x="150" width="30" rx="15" height="70" y="221">
       <animate attributeName="height" values="70;190;70"  dur="0.9s" repeatCount="indefinite"/>
       <animate attributeName="y"      values="221;161;221" dur="0.9s" repeatCount="indefinite"/>
     </rect>
-    <rect x="196" width="30" rx="15">
+    <rect x="196" width="30" rx="15" height="150" y="181">
       <animate attributeName="height" values="150;250;120;150" dur="1.1s" repeatCount="indefinite"/>
       <animate attributeName="y"      values="181;131;196;181" dur="1.1s" repeatCount="indefinite"/>
     </rect>
-    <rect x="242" width="30" rx="15">
+    <rect x="242" width="30" rx="15" height="240" y="136">
       <animate attributeName="height" values="240;120;280;240" dur="0.8s" repeatCount="indefinite"/>
       <animate attributeName="y"      values="136;196;116;136" dur="0.8s" repeatCount="indefinite"/>
     </rect>
-    <rect x="288" width="30" rx="15">
+    <rect x="288" width="30" rx="15" height="130" y="191">
       <animate attributeName="height" values="130;230;90;130" dur="1.05s" repeatCount="indefinite"/>
       <animate attributeName="y"      values="191;141;211;191" dur="1.05s" repeatCount="indefinite"/>
     </rect>
-    <rect x="334" width="30" rx="15">
+    <rect x="334" width="30" rx="15" height="60" y="226">
       <animate attributeName="height" values="60;170;60"  dur="0.95s" repeatCount="indefinite"/>
       <animate attributeName="y"      values="226;171;226" dur="0.95s" repeatCount="indefinite"/>
     </rect>
