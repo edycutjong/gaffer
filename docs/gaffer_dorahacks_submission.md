@@ -106,8 +106,8 @@ All AI runs on-device through `@qvac/sdk`: `loadModel({modelSrc})` with `pear://
 
 ## 9. Pre-submit checklist
 
-- [ ] **[user]** Push `build/` to a public GitHub repo (Apache-2.0 already in place); update badge/repo links in README if desired
+- [x] **[user]** Push `build/` to a public GitHub repo (Apache-2.0 already in place); update badge/repo links in README if desired
 - [x] **[user]** Record the 3-min video (script above), upload unlisted, paste URL → https://youtu.be/PuQPRP3jttA
-- [ ] **[user]** Fill nation / team / location on the form; add all teammates to the BUIDL page
-- [ ] Run `npm run check:ready` — must print `✓ READY`
-- [ ] Paste §1–§7 into the form fields
+- [x] **[user]** Fill nation / team / location on the form; add all teammates to the BUIDL page
+- [x] Run `npm run check:ready` — must print `✓ READY`
+- [x] Paste §1–§7 into the form fields

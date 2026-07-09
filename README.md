@@ -61,8 +61,8 @@ node cli.js --client    # terminal B — the weak phone
 pear run .
 
 # proofs
-npm test         # 220 tests: unit + real-swarm integration
-npm run bench    # local vs offloaded tok/s, p50/p95
+npm test                # 220 tests: unit + real-swarm integration
+npm run bench           # local vs offloaded tok/s, p50/p95
 npm run verify:offline  # the whole flow with the internet blocked
 ```
 
