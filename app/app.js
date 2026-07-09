@@ -82,12 +82,13 @@ function segmentStart (event) {
   const feed = $('feed')
   const seg = document.createElement('div')
   seg.className = `seg ${event.type === 'goal' ? 'goal' : ''}`
-  const label = event.type === 'goal'
-    ? `${icon('ball')} GOAL`
-    : event.type === 'penalty_awarded'
-      ? `${icon('warn')} PENALTY`
-      : event.type.replace(/_/g, ' ')
-  seg.innerHTML = `<span class="stamp">${String(event.minute).padStart(2, '0')}' <span class="etype">${label}</span></span><span class="txt"></span><span class="cursor"></span>`
+  seg.innerHTML = '<span class="stamp"><span class="etype"></span></span><span class="txt"></span><span class="cursor"></span>'
+  const stamp = seg.querySelector('.stamp')
+  const etype = seg.querySelector('.etype')
+  stamp.insertBefore(document.createTextNode(`${String(event.minute).padStart(2, '0')}' `), etype)
+  if (event.type === 'goal') etype.innerHTML = `${icon('ball')} GOAL`
+  else if (event.type === 'penalty_awarded') etype.innerHTML = `${icon('warn')} PENALTY`
+  else etype.textContent = event.type.replace(/_/g, ' ')
   feed.appendChild(seg)
   feed.scrollTop = feed.scrollHeight
   view.currentSeg = seg
