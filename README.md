@@ -14,6 +14,9 @@
 
   <br/><br/>
 
+  [![Watch the 3-min demo](https://img.shields.io/badge/Watch_the_3--min_demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/PuQPRP3jttA)
+  [![Pitch deck](https://img.shields.io/badge/Pitch_deck-live-00E5FF?style=for-the-badge)](https://edycutjong.github.io/gaffer/docs/pitch/)
+
   [![CI/CD Pipeline](https://github.com/edycutjong/gaffer/actions/workflows/ci.yml/badge.svg)](https://github.com/edycutjong/gaffer/actions/workflows/ci.yml)
   [![CodeQL](https://github.com/edycutjong/gaffer/actions/workflows/codeql.yml/badge.svg)](https://github.com/edycutjong/gaffer/actions/workflows/codeql.yml)
   [![Deploy Pages](https://github.com/edycutjong/gaffer/actions/workflows/pages.yml/badge.svg)](https://edycutjong.github.io/gaffer/)
