@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/assets/icon-512.png" width="144" height="144" alt="Gaffer"></p>
+<p align="center"><img src="docs/assets/icon-animated.svg" width="144" height="144" alt="Gaffer"></p>
 
 # Gaffer — the offline AI co-commentator that runs on your peers' hardware
 
@@ -7,8 +7,8 @@
 > **Built:** a working P2P inference-offload runtime with mid-sentence failover, `pear://` model sharing, a broadcast-style HUD, a reproducible benchmark, an offline-proof script and **220 passing tests** (incl. real-swarm integration).
 
 <div align="center">
-  <!-- static PNG for reliable GitHub rendering (camo strips SVG animation); animated: docs/assets/readme-hero-animated.svg -->
-  <img src="docs/assets/readme-hero.png" alt="Gaffer — offline AI co-commentator with P2P inference offload" width="100%">
+  <!-- animated SVG (SMIL) — animates in the rendered README; PNG fallback: docs/assets/readme-hero.png -->
+  <img src="docs/assets/readme-hero-animated.svg" alt="Gaffer — offline AI co-commentator with P2P inference offload" width="100%">
 
   <br/><br/>
 
