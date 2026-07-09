@@ -1,0 +1,1625 @@
+{
+  "generatedBy": "scripts/seed.js",
+  "deterministic": true,
+  "note": "the demo match — a 3-2 thriller with an 86th-minute winner and a penalty",
+  "matchId": "final-2026",
+  "seed": 2047,
+  "minutes": 90,
+  "fixture": {
+    "id": "final-2026",
+    "competition": "World Cup Final",
+    "home": {
+      "name": "Argentina",
+      "code": "ARG",
+      "players": [
+        "Varela",
+        "Quinteros",
+        "Ibáñez",
+        "Roldán",
+        "Acosta",
+        "Ferreyra",
+        "Maidana",
+        "Salvio",
+        "Corrales",
+        "Bustos",
+        "Peralta"
+      ]
+    },
+    "away": {
+      "name": "France",
+      "code": "FRA",
+      "players": [
+        "Dumont",
+        "Lefebvre",
+        "Moreau",
+        "Carpentier",
+        "Baudry",
+        "Renard",
+        "Vasseur",
+        "Chevalier",
+        "Marchand",
+        "Aubert",
+        "Colin"
+      ]
+    }
+  },
+  "finalScore": {
+    "home": 3,
+    "away": 2
+  },
+  "eventCount": 83,
+  "events": [
+    {
+      "n": 0,
+      "matchId": "final-2026",
+      "type": "kickoff",
+      "minute": 1,
+      "second": 0,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Ferreyra",
+        "Quinteros"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": true
+    },
+    {
+      "n": 1,
+      "matchId": "final-2026",
+      "type": "corner",
+      "minute": 1,
+      "second": 10,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Colin",
+        "Dumont"
+      ],
+      "zone": "edge of the box",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 2,
+      "matchId": "final-2026",
+      "type": "pass_chain",
+      "minute": 2,
+      "second": 2,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Roldán",
+        "Peralta"
+      ],
+      "zone": "edge of the box",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 3,
+      "matchId": "final-2026",
+      "type": "press",
+      "minute": 3,
+      "second": 45,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Maidana",
+        "Roldán"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 4,
+      "matchId": "final-2026",
+      "type": "shot_off_target",
+      "minute": 4,
+      "second": 32,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Baudry",
+        "Aubert"
+      ],
+      "zone": "left flank",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 5,
+      "matchId": "final-2026",
+      "type": "shot_on_target",
+      "minute": 8,
+      "second": 36,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Varela",
+        "Peralta"
+      ],
+      "zone": "right half-space",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 6,
+      "matchId": "final-2026",
+      "type": "save",
+      "minute": 8,
+      "second": 37,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Dumont",
+        "Marchand"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 7,
+      "matchId": "final-2026",
+      "type": "goal",
+      "minute": 8,
+      "second": 45,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Quinteros",
+        "Maidana"
+      ],
+      "zone": "left flank",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": true
+    },
+    {
+      "n": 8,
+      "matchId": "final-2026",
+      "type": "counter",
+      "minute": 9,
+      "second": 26,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Colin",
+        "Baudry"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 9,
+      "matchId": "final-2026",
+      "type": "shot_off_target",
+      "minute": 10,
+      "second": 42,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Quinteros",
+        "Peralta"
+      ],
+      "zone": "left flank",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 10,
+      "matchId": "final-2026",
+      "type": "press",
+      "minute": 12,
+      "second": 38,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Chevalier",
+        "Moreau"
+      ],
+      "zone": "left half-space",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 11,
+      "matchId": "final-2026",
+      "type": "press",
+      "minute": 13,
+      "second": 35,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Corrales",
+        "Ferreyra"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 12,
+      "matchId": "final-2026",
+      "type": "shot_off_target",
+      "minute": 14,
+      "second": 37,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Baudry",
+        "Aubert"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 13,
+      "matchId": "final-2026",
+      "type": "pass_chain",
+      "minute": 18,
+      "second": 35,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Chevalier",
+        "Marchand"
+      ],
+      "zone": "left half-space",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 14,
+      "matchId": "final-2026",
+      "type": "press",
+      "minute": 19,
+      "second": 28,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Lefebvre",
+        "Colin"
+      ],
+      "zone": "edge of the box",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 16,
+      "matchId": "final-2026",
+      "type": "corner",
+      "minute": 20,
+      "second": 40,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Salvio",
+        "Varela"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 15,
+      "matchId": "final-2026",
+      "type": "counter",
+      "minute": 20,
+      "second": 55,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Quinteros",
+        "Salvio"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 17,
+      "matchId": "final-2026",
+      "type": "pass_chain",
+      "minute": 22,
+      "second": 3,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Roldán",
+        "Corrales"
+      ],
+      "zone": "deep block",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 18,
+      "matchId": "final-2026",
+      "type": "pass_chain",
+      "minute": 22,
+      "second": 45,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Aubert",
+        "Dumont"
+      ],
+      "zone": "right half-space",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 19,
+      "matchId": "final-2026",
+      "type": "pass_chain",
+      "minute": 24,
+      "second": 36,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Bustos",
+        "Corrales"
+      ],
+      "zone": "left flank",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 20,
+      "matchId": "final-2026",
+      "type": "shot_off_target",
+      "minute": 27,
+      "second": 20,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Bustos",
+        "Corrales"
+      ],
+      "zone": "left half-space",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 21,
+      "matchId": "final-2026",
+      "type": "press",
+      "minute": 28,
+      "second": 36,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Vasseur",
+        "Lefebvre"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 22,
+      "matchId": "final-2026",
+      "type": "pass_chain",
+      "minute": 28,
+      "second": 46,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Corrales",
+        "Ibáñez"
+      ],
+      "zone": "left flank",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 23,
+      "matchId": "final-2026",
+      "type": "shot_on_target",
+      "minute": 29,
+      "second": 14,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Colin",
+        "Renard"
+      ],
+      "zone": "edge of the box",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 25,
+      "matchId": "final-2026",
+      "type": "pass_chain",
+      "minute": 29,
+      "second": 36,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Lefebvre",
+        "Aubert"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 24,
+      "matchId": "final-2026",
+      "type": "save",
+      "minute": 29,
+      "second": 47,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Maidana",
+        "Maidana"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 26,
+      "matchId": "final-2026",
+      "type": "shot_off_target",
+      "minute": 30,
+      "second": 24,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Moreau",
+        "Vasseur"
+      ],
+      "zone": "left flank",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 27,
+      "matchId": "final-2026",
+      "type": "corner",
+      "minute": 32,
+      "second": 24,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Marchand",
+        "Marchand"
+      ],
+      "zone": "left flank",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 28,
+      "matchId": "final-2026",
+      "type": "shot_on_target",
+      "minute": 33,
+      "second": 52,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Lefebvre",
+        "Aubert"
+      ],
+      "zone": "edge of the box",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 30,
+      "matchId": "final-2026",
+      "type": "pass_chain",
+      "minute": 36,
+      "second": 16,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Corrales",
+        "Bustos"
+      ],
+      "zone": "left flank",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 29,
+      "matchId": "final-2026",
+      "type": "corner",
+      "minute": 36,
+      "second": 35,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Acosta",
+        "Ferreyra"
+      ],
+      "zone": "left flank",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 31,
+      "matchId": "final-2026",
+      "type": "shot_off_target",
+      "minute": 38,
+      "second": 7,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Chevalier",
+        "Baudry"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 32,
+      "matchId": "final-2026",
+      "type": "shot_off_target",
+      "minute": 38,
+      "second": 32,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Marchand",
+        "Chevalier"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 33,
+      "matchId": "final-2026",
+      "type": "pass_chain",
+      "minute": 39,
+      "second": 51,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Vasseur",
+        "Marchand"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 34,
+      "matchId": "final-2026",
+      "type": "shot_off_target",
+      "minute": 41,
+      "second": 20,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Carpentier",
+        "Marchand"
+      ],
+      "zone": "left half-space",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 35,
+      "matchId": "final-2026",
+      "type": "offside",
+      "minute": 42,
+      "second": 57,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Colin",
+        "Chevalier"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 36,
+      "matchId": "final-2026",
+      "type": "press",
+      "minute": 43,
+      "second": 6,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Roldán",
+        "Ferreyra"
+      ],
+      "zone": "deep block",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 37,
+      "matchId": "final-2026",
+      "type": "half_time",
+      "minute": 45,
+      "second": 59,
+      "side": null,
+      "team": null,
+      "players": [],
+      "zone": "right half-space",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": true
+    },
+    {
+      "n": 38,
+      "matchId": "final-2026",
+      "type": "offside",
+      "minute": 47,
+      "second": 45,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Vasseur",
+        "Dumont"
+      ],
+      "zone": "right half-space",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 39,
+      "matchId": "final-2026",
+      "type": "counter",
+      "minute": 47,
+      "second": 55,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Acosta",
+        "Corrales"
+      ],
+      "zone": "edge of the box",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 40,
+      "matchId": "final-2026",
+      "type": "press",
+      "minute": 48,
+      "second": 4,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Quinteros",
+        "Quinteros"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 41,
+      "matchId": "final-2026",
+      "type": "shot_on_target",
+      "minute": 49,
+      "second": 43,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Roldán",
+        "Varela"
+      ],
+      "zone": "deep block",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 42,
+      "matchId": "final-2026",
+      "type": "save",
+      "minute": 49,
+      "second": 44,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Marchand",
+        "Carpentier"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 43,
+      "matchId": "final-2026",
+      "type": "pass_chain",
+      "minute": 50,
+      "second": 20,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Maidana",
+        "Peralta"
+      ],
+      "zone": "deep block",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 44,
+      "matchId": "final-2026",
+      "type": "pass_chain",
+      "minute": 51,
+      "second": 8,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Renard",
+        "Dumont"
+      ],
+      "zone": "edge of the box",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 45,
+      "matchId": "final-2026",
+      "type": "shot_on_target",
+      "minute": 51,
+      "second": 35,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Renard",
+        "Marchand"
+      ],
+      "zone": "left half-space",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 46,
+      "matchId": "final-2026",
+      "type": "foul",
+      "minute": 52,
+      "second": 59,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Maidana",
+        "Ibáñez"
+      ],
+      "zone": "right half-space",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 47,
+      "matchId": "final-2026",
+      "type": "press",
+      "minute": 53,
+      "second": 36,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Baudry",
+        "Marchand"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 48,
+      "matchId": "final-2026",
+      "type": "goal",
+      "minute": 55,
+      "second": 34,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Carpentier",
+        "Carpentier"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": true
+    },
+    {
+      "n": 49,
+      "matchId": "final-2026",
+      "type": "press",
+      "minute": 57,
+      "second": 16,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Aubert",
+        "Dumont"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 50,
+      "matchId": "final-2026",
+      "type": "substitution",
+      "minute": 58,
+      "second": 12,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Quinteros",
+        "Corrales"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 51,
+      "matchId": "final-2026",
+      "type": "pass_chain",
+      "minute": 58,
+      "second": 29,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Lefebvre",
+        "Chevalier"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 52,
+      "matchId": "final-2026",
+      "type": "pass_chain",
+      "minute": 59,
+      "second": 26,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Vasseur",
+        "Chevalier"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 53,
+      "matchId": "final-2026",
+      "type": "corner",
+      "minute": 61,
+      "second": 1,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Ibáñez",
+        "Ferreyra"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 54,
+      "matchId": "final-2026",
+      "type": "pass_chain",
+      "minute": 61,
+      "second": 9,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Corrales",
+        "Roldán"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 55,
+      "matchId": "final-2026",
+      "type": "foul",
+      "minute": 62,
+      "second": 54,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Quinteros",
+        "Acosta"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 56,
+      "matchId": "final-2026",
+      "type": "press",
+      "minute": 65,
+      "second": 29,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Colin",
+        "Dumont"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 58,
+      "matchId": "final-2026",
+      "type": "pass_chain",
+      "minute": 66,
+      "second": 0,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Marchand",
+        "Colin"
+      ],
+      "zone": "left flank",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 57,
+      "matchId": "final-2026",
+      "type": "press",
+      "minute": 66,
+      "second": 41,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Corrales",
+        "Quinteros"
+      ],
+      "zone": "edge of the box",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 59,
+      "matchId": "final-2026",
+      "type": "counter",
+      "minute": 67,
+      "second": 56,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Bustos",
+        "Varela"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 60,
+      "matchId": "final-2026",
+      "type": "goal",
+      "minute": 68,
+      "second": 29,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Roldán",
+        "Peralta"
+      ],
+      "zone": "right half-space",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "priority": true
+    },
+    {
+      "n": 61,
+      "matchId": "final-2026",
+      "type": "pass_chain",
+      "minute": 70,
+      "second": 33,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Moreau",
+        "Vasseur"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 63,
+      "matchId": "final-2026",
+      "type": "press",
+      "minute": 74,
+      "second": 22,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Dumont",
+        "Colin"
+      ],
+      "zone": "left half-space",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 62,
+      "matchId": "final-2026",
+      "type": "press",
+      "minute": 74,
+      "second": 23,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Peralta",
+        "Acosta"
+      ],
+      "zone": "right half-space",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 64,
+      "matchId": "final-2026",
+      "type": "pass_chain",
+      "minute": 75,
+      "second": 33,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Vasseur",
+        "Aubert"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 65,
+      "matchId": "final-2026",
+      "type": "corner",
+      "minute": 76,
+      "second": 30,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Aubert",
+        "Moreau"
+      ],
+      "zone": "right half-space",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 66,
+      "matchId": "final-2026",
+      "type": "shot_off_target",
+      "minute": 77,
+      "second": 41,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Vasseur",
+        "Marchand"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 67,
+      "matchId": "final-2026",
+      "type": "pass_chain",
+      "minute": 78,
+      "second": 4,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Aubert",
+        "Chevalier"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 68,
+      "matchId": "final-2026",
+      "type": "pass_chain",
+      "minute": 79,
+      "second": 19,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Maidana",
+        "Roldán"
+      ],
+      "zone": "right half-space",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 69,
+      "matchId": "final-2026",
+      "type": "pass_chain",
+      "minute": 79,
+      "second": 51,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Maidana",
+        "Ibáñez"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 70,
+      "matchId": "final-2026",
+      "type": "shot_on_target",
+      "minute": 80,
+      "second": 3,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Chevalier",
+        "Moreau"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 71,
+      "matchId": "final-2026",
+      "type": "penalty_awarded",
+      "minute": 81,
+      "second": 16,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Colin",
+        "Marchand"
+      ],
+      "zone": "deep block",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "priority": true
+    },
+    {
+      "n": 73,
+      "matchId": "final-2026",
+      "type": "shot_off_target",
+      "minute": 81,
+      "second": 24,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Marchand",
+        "Chevalier"
+      ],
+      "zone": "left half-space",
+      "score": {
+        "home": 2,
+        "away": 2
+      },
+      "priority": false
+    },
+    {
+      "n": 72,
+      "matchId": "final-2026",
+      "type": "goal",
+      "minute": 81,
+      "second": 51,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Chevalier",
+        "Renard"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 2,
+        "away": 2
+      },
+      "priority": true,
+      "fromPenalty": true
+    },
+    {
+      "n": 74,
+      "matchId": "final-2026",
+      "type": "counter",
+      "minute": 83,
+      "second": 8,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Peralta",
+        "Quinteros"
+      ],
+      "zone": "left flank",
+      "score": {
+        "home": 2,
+        "away": 2
+      },
+      "priority": false
+    },
+    {
+      "n": 75,
+      "matchId": "final-2026",
+      "type": "press",
+      "minute": 84,
+      "second": 10,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Aubert",
+        "Moreau"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 2,
+        "away": 2
+      },
+      "priority": false
+    },
+    {
+      "n": 76,
+      "matchId": "final-2026",
+      "type": "foul",
+      "minute": 84,
+      "second": 54,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Carpentier",
+        "Vasseur"
+      ],
+      "zone": "edge of the box",
+      "score": {
+        "home": 2,
+        "away": 2
+      },
+      "priority": false
+    },
+    {
+      "n": 78,
+      "matchId": "final-2026",
+      "type": "pass_chain",
+      "minute": 86,
+      "second": 37,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Baudry",
+        "Lefebvre"
+      ],
+      "zone": "left flank",
+      "score": {
+        "home": 3,
+        "away": 2
+      },
+      "priority": false
+    },
+    {
+      "n": 77,
+      "matchId": "final-2026",
+      "type": "goal",
+      "minute": 86,
+      "second": 46,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Ibáñez",
+        "Bustos"
+      ],
+      "zone": "left half-space",
+      "score": {
+        "home": 3,
+        "away": 2
+      },
+      "priority": true
+    },
+    {
+      "n": 79,
+      "matchId": "final-2026",
+      "type": "shot_on_target",
+      "minute": 88,
+      "second": 55,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Dumont",
+        "Chevalier"
+      ],
+      "zone": "left flank",
+      "score": {
+        "home": 3,
+        "away": 2
+      },
+      "priority": false
+    },
+    {
+      "n": 80,
+      "matchId": "final-2026",
+      "type": "save",
+      "minute": 88,
+      "second": 56,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Quinteros",
+        "Acosta"
+      ],
+      "zone": "edge of the box",
+      "score": {
+        "home": 3,
+        "away": 2
+      },
+      "priority": false
+    },
+    {
+      "n": 81,
+      "matchId": "final-2026",
+      "type": "counter",
+      "minute": 90,
+      "second": 2,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Acosta",
+        "Ferreyra"
+      ],
+      "zone": "left half-space",
+      "score": {
+        "home": 3,
+        "away": 2
+      },
+      "priority": false
+    },
+    {
+      "n": 82,
+      "matchId": "final-2026",
+      "type": "full_time",
+      "minute": 90,
+      "second": 59,
+      "side": null,
+      "team": null,
+      "players": [],
+      "zone": "right flank",
+      "score": {
+        "home": 3,
+        "away": 2
+      },
+      "priority": true
+    }
+  ]
+}

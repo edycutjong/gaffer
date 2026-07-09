@@ -1,0 +1,313 @@
+{
+  "generatedBy": "scripts/seed.js",
+  "deterministic": true,
+  "note": "twelve-minute quick demo / video capture",
+  "matchId": "short-demo",
+  "seed": 7,
+  "minutes": 12,
+  "fixture": {
+    "id": "short-demo",
+    "competition": "World Cup Final",
+    "home": {
+      "name": "Argentina",
+      "code": "ARG",
+      "players": [
+        "Varela",
+        "Quinteros",
+        "Ibáñez",
+        "Roldán",
+        "Acosta",
+        "Ferreyra",
+        "Maidana",
+        "Salvio",
+        "Corrales",
+        "Bustos",
+        "Peralta"
+      ]
+    },
+    "away": {
+      "name": "France",
+      "code": "FRA",
+      "players": [
+        "Dumont",
+        "Lefebvre",
+        "Moreau",
+        "Carpentier",
+        "Baudry",
+        "Renard",
+        "Vasseur",
+        "Chevalier",
+        "Marchand",
+        "Aubert",
+        "Colin"
+      ]
+    }
+  },
+  "finalScore": {
+    "home": 0,
+    "away": 0
+  },
+  "eventCount": 14,
+  "events": [
+    {
+      "n": 0,
+      "matchId": "short-demo",
+      "type": "kickoff",
+      "minute": 1,
+      "second": 0,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Quinteros",
+        "Maidana"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": true
+    },
+    {
+      "n": 1,
+      "matchId": "short-demo",
+      "type": "offside",
+      "minute": 1,
+      "second": 7,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Bustos",
+        "Bustos"
+      ],
+      "zone": "deep block",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 2,
+      "matchId": "short-demo",
+      "type": "pass_chain",
+      "minute": 2,
+      "second": 18,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Aubert",
+        "Marchand"
+      ],
+      "zone": "left flank",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 3,
+      "matchId": "short-demo",
+      "type": "pass_chain",
+      "minute": 4,
+      "second": 49,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Dumont",
+        "Baudry"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 4,
+      "matchId": "short-demo",
+      "type": "counter",
+      "minute": 5,
+      "second": 57,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Carpentier",
+        "Dumont"
+      ],
+      "zone": "edge of the box",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 5,
+      "matchId": "short-demo",
+      "type": "half_time",
+      "minute": 6,
+      "second": 59,
+      "side": null,
+      "team": null,
+      "players": [],
+      "zone": "edge of the box",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": true
+    },
+    {
+      "n": 6,
+      "matchId": "short-demo",
+      "type": "pass_chain",
+      "minute": 7,
+      "second": 40,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Corrales",
+        "Ferreyra"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 7,
+      "matchId": "short-demo",
+      "type": "counter",
+      "minute": 8,
+      "second": 9,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Aubert",
+        "Lefebvre"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 8,
+      "matchId": "short-demo",
+      "type": "press",
+      "minute": 9,
+      "second": 7,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Vasseur",
+        "Renard"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 9,
+      "matchId": "short-demo",
+      "type": "pass_chain",
+      "minute": 10,
+      "second": 20,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Acosta",
+        "Salvio"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 11,
+      "matchId": "short-demo",
+      "type": "yellow_card",
+      "minute": 11,
+      "second": 14,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Marchand",
+        "Moreau"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": true
+    },
+    {
+      "n": 10,
+      "matchId": "short-demo",
+      "type": "counter",
+      "minute": 11,
+      "second": 24,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Maidana",
+        "Quinteros"
+      ],
+      "zone": "left half-space",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 12,
+      "matchId": "short-demo",
+      "type": "pass_chain",
+      "minute": 12,
+      "second": 26,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Bustos",
+        "Salvio"
+      ],
+      "zone": "deep block",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 13,
+      "matchId": "short-demo",
+      "type": "full_time",
+      "minute": 12,
+      "second": 59,
+      "side": null,
+      "team": null,
+      "players": [],
+      "zone": "left flank",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": true
+    }
+  ]
+}

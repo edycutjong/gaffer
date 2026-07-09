@@ -1,0 +1,30 @@
+# Environment variables (none are required — that's the point — but never leak any)
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Models (GGUF are shared via pear://, never committed)
+models/
+*.gguf
+
+# QVAC / Pear local state
+.qvac/
+.pear/
+corestore/
+storage/
+
+# Test & coverage artifacts
+coverage/
+.nyc_output/
+test-results/
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*

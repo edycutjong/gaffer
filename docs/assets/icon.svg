@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Gaffer">
+  <defs>
+    <linearGradient id="g-wave" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="var(--primary, #00E5FF)"/><stop offset="100%" stop-color="var(--boost, #B6FF3D)"/>
+    </linearGradient>
+    <filter id="g-soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="var(--bg, #0A0A0F)"/>
+  <rect x="16.5" y="16.5" width="479" height="479" rx="111.5" fill="none" stroke="var(--border-strong, #123)" stroke-width="1"/>
+
+  <!-- HUD ring -->
+  <circle cx="256" cy="256" r="168" fill="none" stroke="var(--primary, #00E5FF)" stroke-width="6" opacity="0.25"/>
+  <!-- streaming waveform bars (commentary) -->
+  <g fill="url(#g-wave)" filter="url(#g-soft)">
+    <rect x="150" y="216" width="30" height="80"  rx="15"/>
+    <rect x="196" y="176" width="30" height="160" rx="15"/>
+    <rect x="242" y="136" width="30" height="240" rx="15"/>
+    <rect x="288" y="186" width="30" height="140" rx="15"/>
+    <rect x="334" y="226" width="30" height="60"  rx="15"/>
+  </g>
+  <!-- offload peer node + link -->
+  <line x1="360" y1="152" x2="416" y2="112" stroke="var(--boost, #B6FF3D)" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="424" cy="104" r="26" fill="var(--boost, #B6FF3D)"/>
+</svg>

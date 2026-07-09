@@ -1,0 +1,67 @@
+{
+  "name": "gaffer",
+  "version": "1.0.0",
+  "description": "Offline AI football co-commentator that runs on your peers' hardware — QVAC on-device inference with P2P offload over the Pear stack. No cloud, no API keys.",
+  "type": "module",
+  "main": "app/index.html",
+  "exports": {
+    ".": "./index.js",
+    "./lib/*": "./lib/*"
+  },
+  "bin": {
+    "gaffer": "./cli.js"
+  },
+  "pear": {
+    "name": "gaffer",
+    "gui": {
+      "backgroundColor": "#0A0A0F",
+      "width": 1280,
+      "height": 800
+    }
+  },
+  "scripts": {
+    "test": "node --test",
+    "test:unit": "node --test test/*.test.js",
+    "test:integration": "node --test test/integration/*.test.js",
+    "test:count": "node scripts/count_tests.js",
+    "coverage": "node --test --experimental-test-coverage --test-coverage-exclude=\"test/**\" --test-coverage-exclude=\"scripts/**\" --test-coverage-exclude=\"app/**\" --test-coverage-exclude=\"lib/engines/qvac.js\" --test-coverage-exclude=\"lib/engine.js\" --test-coverage-exclude=\"lib/modelshare.js\" --test-coverage-lines=100 --test-coverage-functions=100 --test-coverage-branches=100",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "bench": "node scripts/bench.js",
+    "verify:offline": "node scripts/verify_offline.js",
+    "check:ready": "node scripts/check_submission_readiness.js",
+    "seed": "node scripts/seed.js",
+    "seed:model": "node scripts/seed_model.js",
+    "demo:web": "node scripts/serve_web_demo.js",
+    "setup:qvac": "npm install @qvac/sdk@^0.14.1 --no-save",
+    "ci": "npm run lint && npm test && npm run check:ready"
+  },
+  "dependencies": {
+    "b4a": "^1.6.7",
+    "corestore": "^7.4.5",
+    "hypercore-crypto": "^3.7.0",
+    "hyperdrive": "^13.1.0",
+    "hyperswarm": "^4.17.0",
+    "z32": "^1.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "eslint": "^9.39.2",
+    "hyperdht": "^6.32.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "Apache-2.0",
+  "author": "Edy Cu",
+  "keywords": [
+    "qvac",
+    "pear",
+    "p2p",
+    "on-device-ai",
+    "inference-offload",
+    "hyperswarm",
+    "football",
+    "commentary"
+  ]
+}

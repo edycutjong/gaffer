@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>document.documentElement.classList.add('js')</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaffer — the offline AI co-commentator that runs on your peers' hardware</title>
+<meta name="description" content="On-device AI football commentary via QVAC. When your phone is too weak, it borrows a laptop peer's compute over encrypted P2P. Zero cloud, zero API keys.">
+<style>
+:root{
+  --bg:#0A0A0F;--surface:#111119;--surface-2:#16161F;--primary:#00E5FF;--accent:#FF3D71;--boost:#B6FF3D;
+  --text:#F0F4F8;--muted:#8A93A3;--dim:#5C6472;--border:rgba(240,244,248,0.08);--border-strong:rgba(0,229,255,0.22);
+  --display:"Avenir Next Condensed","Arial Narrow",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono","Segoe UI Mono","Roboto Mono",Menlo,Consolas,monospace;
+  --ease:cubic-bezier(0.22,1,0.36,1);--dur:.6s;
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+}
+@keyframes gridDrift{0%{background-position:0 0,0 0,0 0}100%{background-position:0 0,60px 60px,60px 60px}}
+@keyframes glowPulse{0%,100%{text-shadow:0 0 24px rgba(0,229,255,0.5)}50%{text-shadow:0 0 36px rgba(0,229,255,0.85)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--body);line-height:1.6;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(ellipse 70% 40% at 50% -5%,rgba(0,229,255,0.09),transparent 70%),
+  repeating-linear-gradient(0deg,transparent 0 59px,rgba(240,244,248,0.02) 59px 60px),
+  repeating-linear-gradient(90deg,transparent 0 59px,rgba(240,244,248,0.015) 59px 60px);
+  animation:gridDrift 50s linear infinite}
+main,header,footer{position:relative;z-index:1}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:10;backdrop-filter:blur(14px);background:rgba(10,10,15,0.72);border-bottom:1px solid var(--border)}
+nav{display:flex;align-items:center;gap:22px;padding:14px 0}
+.logo{font-family:var(--display);font-weight:700;letter-spacing:0.16em;color:var(--primary);font-size:19px;text-shadow:0 0 24px rgba(0,229,255,0.5);animation:glowPulse 4s ease-in-out infinite}
+.kicker .icon{animation:bob 2.4s ease-in-out infinite}
+nav a{color:var(--muted);text-decoration:none;font-size:13.5px;letter-spacing:0.04em;transition:color .2s var(--ease)}
+nav a:hover{color:var(--text)}
+nav a:focus-visible,.btn:focus-visible,.dots button:focus-visible{outline:2px solid var(--primary);outline-offset:3px;border-radius:4px}
+nav .cta{margin-left:auto;color:#00121A;background:var(--primary);padding:8px 18px;border-radius:999px;font-weight:600;box-shadow:0 0 24px rgba(0,229,255,0.35);transition:box-shadow .25s var(--ease),transform .25s var(--ease)}
+nav .cta:hover{box-shadow:0 0 34px rgba(0,229,255,0.55);transform:translateY(-1px)}
+.hero{padding:88px 0 40px;text-align:center}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:0.22em;color:var(--boost);text-transform:uppercase}
+h1{font-family:var(--display);font-size:clamp(2.6rem,6.5vw,4.8rem);line-height:1.04;letter-spacing:0.01em;margin:18px 0;
+  background:linear-gradient(120deg,#fff 0%,var(--primary) 55%,var(--boost) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:rise .8s var(--ease) both}
+.sub{max-width:660px;margin:0 auto 30px;color:var(--muted);font-size:17px;animation:rise .8s .12s var(--ease) both}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;animation:rise .8s .22s var(--ease) both}
+.btn{font-family:var(--mono);font-size:14px;padding:13px 26px;border-radius:999px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;
+  transition:transform .18s var(--ease),box-shadow .18s var(--ease),background .18s var(--ease),border-color .18s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--primary);color:#00121A;font-weight:700;box-shadow:0 0 34px rgba(0,229,255,0.35)}
+.btn-primary:hover{box-shadow:0 0 48px rgba(0,229,255,0.6)}
+.btn-ghost{border:1px solid var(--border-strong);color:var(--primary)}
+.btn-ghost:hover{background:rgba(0,229,255,0.08);border-color:var(--primary)}
+.stats{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;padding:34px 0 8px;animation:rise .8s .3s var(--ease) both}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px 26px;min-width:170px;
+  transition:transform .3s var(--ease),border-color .3s var(--ease),box-shadow .3s var(--ease);cursor:default}
+.stat:hover{transform:translateY(-4px);border-color:var(--border-strong);box-shadow:0 14px 40px rgba(0,0,0,0.45),0 0 28px rgba(0,229,255,0.14)}
+.stat b{display:block;font-family:var(--mono);font-size:26px;color:var(--boost);text-shadow:0 0 20px rgba(182,255,61,0.4);transition:text-shadow .3s}
+.stat:hover b{text-shadow:0 0 28px rgba(182,255,61,0.65)}
+.stat span{font-size:11.5px;color:var(--dim);letter-spacing:0.06em}
+.stat small{display:block;font-size:10px;color:var(--dim);margin-top:2px}
+.shot{margin:44px auto;max-width:960px;border-radius:16px;border:1px solid var(--border-strong);box-shadow:0 30px 90px rgba(0,0,0,0.6),0 0 60px rgba(0,229,255,0.08);overflow:hidden;
+  transition:box-shadow .4s var(--ease),transform .4s var(--ease)}
+.shot:hover{box-shadow:0 34px 100px rgba(0,0,0,0.65),0 0 80px rgba(0,229,255,0.16);transform:translateY(-3px)}
+.shot img{width:100%;display:block}
+/* scroll-reveal: JS toggles .is-visible; no-JS and reduced-motion fall back to visible */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.is-visible{opacity:1;transform:none}
+.no-js .reveal,html:not(.js) .reveal{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+section{padding:64px 0}
+h2{font-family:var(--display);font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:10px}
+.lede{color:var(--muted);max-width:640px;margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.card{background:linear-gradient(160deg,rgba(0,229,255,0.04),transparent 40%),var(--surface);border:1px solid var(--border);border-radius:16px;padding:22px;
+  transition:transform .32s var(--ease),border-color .32s var(--ease),box-shadow .32s var(--ease);position:relative}
+.card:hover{transform:translateY(-5px);border-color:var(--border-strong);box-shadow:0 18px 46px rgba(0,0,0,0.5),0 0 34px rgba(0,229,255,0.12)}
+.card:hover .tag{color:var(--boost)}
+.card h3{font-family:var(--display);font-size:16px;letter-spacing:0.05em;margin-bottom:8px;color:var(--text)}
+.card p{font-size:13.8px;color:var(--muted)}
+.card .tag{font-family:var(--mono);font-size:10.5px;color:var(--primary);letter-spacing:0.12em;transition:color .32s var(--ease)}
+.steps{counter-reset:s}
+.step{display:flex;gap:18px;padding:18px 0;border-bottom:1px solid var(--border);transition:padding-left .3s var(--ease),border-color .3s var(--ease)}
+.step:last-child{border-bottom:none}
+.step:hover{padding-left:8px;border-color:var(--border-strong)}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:var(--mono);color:var(--boost);font-size:22px;font-weight:700;min-width:44px;transition:text-shadow .3s var(--ease)}
+.step:hover::before{text-shadow:0 0 18px rgba(182,255,61,0.55)}
+.step code{font-family:var(--mono);background:var(--surface-2);border:1px solid var(--border);border-radius:6px;padding:2px 8px;font-size:12.5px;color:var(--primary)}
+.honest{background:var(--surface);border:1px solid rgba(255,194,75,0.25);border-radius:16px;padding:24px}
+.honest h3{color:#FFC24B;font-family:var(--display);margin-bottom:10px;font-size:15px;letter-spacing:0.08em}
+.honest li{margin-left:18px;color:var(--muted);font-size:13.8px;padding:3px 0}
+.final{text-align:center;padding:80px 0}
+.final h2{font-size:clamp(2rem,4.5vw,3.2rem)}
+footer{border-top:1px solid var(--border);padding:28px 0;color:var(--dim);font-size:12.5px}
+footer .wrap{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--primary)}
+.pill{font-family:var(--mono);font-size:10.5px;border:1px solid var(--border);border-radius:999px;padding:3px 10px;color:var(--dim)}
+@media (max-width:640px){nav a:not(.cta):not(.logo){display:none}}
+</style>
+</head>
+<body>
+<!-- inline icon set (no emoji, no external assets) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="i-ball" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8.4 15.4 10.9 14.1 14.9 H9.9 L8.6 10.9 Z M12 3v5.4 M15.4 10.9 20.6 9.3 M14.1 14.9 17.3 19.2 M9.9 14.9 6.7 19.2 M8.6 10.9 3.4 9.3"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5 18.5 12 8 18.5 Z"/></symbol>
+  <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 3.5 21.5 20 H2.5 Z M12 9.5v5 M12 17.4v.1"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .8C5.9.8 1 5.7 1 11.8c0 4.9 3.1 9 7.5 10.5.6.1.8-.2.8-.5v-2c-3 .6-3.7-1.3-3.7-1.3-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.7 2.6 1.2 3.2.9.1-.7.4-1.2.7-1.5-2.4-.3-5-1.2-5-5.4 0-1.2.4-2.2 1.1-2.9-.1-.3-.5-1.4.1-2.9 0 0 .9-.3 3 1.1a10.4 10.4 0 0 1 5.5 0c2.1-1.4 3-1.1 3-1.1.6 1.5.2 2.6.1 2.9.7.7 1.1 1.7 1.1 2.9 0 4.2-2.6 5.1-5 5.4.4.3.8 1 .8 2.1v3c0 .3.2.6.8.5C19.9 20.8 23 16.7 23 11.8 23 5.7 18.1.8 12 .8Z"/></symbol>
+</defs></svg>
+<style>
+.icon{width:1em;height:1em;flex:none;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;vertical-align:-0.125em}
+.icon-brand{fill:currentColor;stroke:none}
+</style>
+<header>
+  <div class="wrap"><nav>
+    <span class="logo">GAFFER</span>
+    <a href="#how">How it works</a>
+    <a href="#proof">Proof</a>
+    <a href="#stack">QVAC × Pear</a>
+    <a href="https://github.com/edycutjong/gaffer" target="_blank" rel="noopener"><svg class="icon icon-brand"><use href="#i-github"/></svg> GitHub</a>
+    <a class="cta" href="#run">Run it</a>
+  </nav></div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section class="hero">
+      <div class="kicker"><svg class="icon"><use href="#i-ball"/></svg> Tether Developers Cup 2026 · QVAC track · built on Pears</div>
+      <h1>A pundit in your ear.<br>No cloud. No signal needed.<br>Not even your own compute.</h1>
+      <p class="sub">Gaffer streams tactical football commentary from a language model running <b>on your device</b> via QVAC.
+      And when your phone is too weak — in the away end, on a plane — it <b>borrows a laptop peer's compute over an encrypted P2P link</b> and keeps talking.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#run"><svg class="icon"><use href="#i-play"/></svg> Two-terminal demo</a>
+        <!-- replace-me: swap for the unlisted YouTube link before submitting -->
+        <a class="btn btn-ghost" href="https://youtu.be/PuQPRP3jttA" target="_blank" rel="noopener"><svg class="icon"><use href="#i-play"/></svg> Watch demo</a>
+        <a class="btn btn-ghost" href="#proof">Offline proof</a>
+        <a class="btn btn-ghost" href="https://github.com/edycutjong/gaffer" target="_blank" rel="noopener"><svg class="icon icon-brand"><use href="#i-github"/></svg> GitHub</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>×7.8</b><span>TOK/S SPEEDUP (P50)</span><small>weak client → laptop peer, npm run bench</small></div>
+        <div class="stat"><b>97%+</b><span>TRANSPORT EFFICIENCY</span><small>of provider rate survives the P2P hop</small></div>
+        <div class="stat"><b>220</b><span>TESTS · ALL GREEN</span><small>incl. real-swarm failover, node --test</small></div>
+        <div class="stat"><b>0</b><span>CLOUD CALLS</span><small>enforced by a network guard, not a promise</small></div>
+      </div>
+      <div class="shot"><img src="../docs/assets/hud-live.png" alt="Gaffer live commentary HUD — streaming tactical feed with tokens/sec gauge and BOOSTED BY PEER badge"></div>
+    </section>
+
+    <section id="how">
+      <h2 class="reveal">The offload is the product</h2>
+      <p class="lede reveal">One flow, extreme depth: join a match room → delegate inference to a trusted peer → stream commentary to the ear. Everything else got cut.</p>
+      <div class="grid">
+        <div class="card reveal"><span class="tag">QVAC · completion()</span><h3>On-device commentary</h3><p>A small LLM (LLAMA 3.2 1B GGUF) narrates every press, overlap and penalty token-by-token from a football system prompt. Focus it on attack or defense, throttle the verbosity, pause it — it's your personal feed.</p></div>
+        <div class="card reveal"><span class="tag">Pear · Hyperswarm + Secretstream</span><h3>Peer compute, encrypted</h3><p>A laptop in the room announces itself as a provider on the match topic. Your phone's completion requests stream over a Noise-encrypted swarm socket — peers are keypairs, not IP addresses.</p></div>
+        <div class="card reveal"><span class="tag">state machine · tested</span><h3>Mid-sentence failover</h3><p>Kill the provider mid-stream and the sentence finishes on-device — token-exact with a deterministic engine. LOCAL → OFFLOADED → FALLBACK → recovered, every edge unit-tested.</p></div>
+        <div class="card reveal"><span class="tag">pear:// · Hyperdrive</span><h3>Models from peers, not CDNs</h3><p>The GGUF weights are seeded as a Hyperdrive and fetched over <code style="font-family:var(--mono)">pear://</code> — a fresh phone gets a working brain from the fan sitting next to it. No match-day download.</p></div>
+      </div>
+      <div class="shot reveal"><img src="../docs/assets/hud-peer-link.png" alt="Peer offload view — encrypted inference link between weak phone and provider peer with ×7.8 speedup"></div>
+    </section>
+
+    <section id="proof">
+      <h2 class="reveal">Claims you can execute</h2>
+      <p class="lede reveal">Every number above is produced by a script in the repo, not typed into a README.</p>
+      <div class="steps">
+        <div class="step reveal"><div><b>Benchmark</b> — <code>npm run bench</code><br><span style="color:var(--muted);font-size:13.5px">local vs offloaded tokens/sec with p50/p95, first-token latency and peer-connect time. Reproducible: same seed, same segments.</span></div></div>
+        <div class="step reveal"><div><b>Offline verification</b> — <code>npm run verify:offline</code><br><span style="color:var(--muted);font-size:13.5px">a process-wide network guard blocks every non-local connection, then runs the full commentary loop AND the full P2P offload on a loopback-only DHT. Any cloud call = loud failure.</span></div></div>
+        <div class="step reveal"><div><b>Readiness gate</b> — <code>npm run check:ready</code><br><span style="color:var(--muted);font-size:13.5px">fails the build if unfinished copy survives anywhere or the README's stated test count doesn't match a live run.</span></div></div>
+      </div>
+      <div class="shot reveal"><img src="../docs/assets/hud-offline-proof.png" alt="Offline proof view — airplane mode ready, zero cloud calls, engine disclosure"></div>
+    </section>
+
+    <section id="stack">
+      <h2 class="reveal">Why only QVAC × Pear</h2>
+      <p class="lede reveal">They share the same Holepunch substrate — inference delegation over a swarm is native, not a bolt-on.
+      Take them out and you'd need a cloud LLM, a cloud TTS, a model CDN, a signalling/TURN server and a rented GPU — plus a privacy policy asking fans to trust you.</p>
+      <div class="grid">
+        <div class="card reveal"><h3>QVAC</h3><p style="font-family:var(--mono);font-size:12.5px">loadModel({modelSrc: pear://…}) · completion({stream:true}) → tokenStream · textToSpeech (Piper) · startQVACProvider({topic})</p></div>
+        <div class="card reveal"><h3>Pear</h3><p style="font-family:var(--mono);font-size:12.5px">Hyperswarm match rooms · Noise Secretstream E2E · Hyperdrive model sharing · HyperDHT holepunching · Bare-ready</p></div>
+      </div>
+      <div class="honest reveal" style="margin-top:16px">
+        <h3><svg class="icon"><use href="#i-warn"/></svg> Honest limitations</h3>
+        <ul>
+          <li>Cold-start model load is slow on first run — mitigated by <span style="font-family:var(--mono)">pear://</span> pre-seeding, and documented rather than hidden.</li>
+          <li>Commentary is generative narration of a match event feed — it is not a licensed live-data product.</li>
+          <li>Without <span style="font-family:var(--mono)">@qvac/sdk</span> installed, a clearly-labelled deterministic sim engine drives development and demos; it is never presented as a model and TTS stays off rather than faking audio.</li>
+          <li>Token-exact failover resume holds for deterministic engines; with a real LLM the segment restarts (flagged in the UI) — honesty over magic.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="final" id="run">
+      <h2 class="reveal">Run it in two terminals</h2>
+      <p class="sub reveal" style="margin-bottom:26px">No accounts. No API keys. Node ≥ 20.</p>
+      <div class="card reveal" style="text-align:left;max-width:640px;margin:0 auto;font-family:var(--mono);font-size:13.5px;line-height:2">
+        <div style="color:var(--dim)"># install</div>
+        <div>git clone https://github.com/edycutjong/gaffer.git &amp;&amp; cd gaffer &amp;&amp; npm install</div>
+        <div style="color:var(--dim)"># terminal A — the laptop brain</div>
+        <div>node cli.js <span style="color:var(--boost)">--provider</span></div>
+        <div style="color:var(--dim)"># terminal B — the weak phone</div>
+        <div>node cli.js <span style="color:var(--primary)">--client</span></div>
+        <div style="color:var(--dim)"># or judge it in one terminal</div>
+        <div>node cli.js --standalone</div>
+      </div>
+      <div class="cta-row reveal" style="margin-top:30px">
+        <a class="btn btn-primary" href="../docs/DEMO.md">Full demo script →</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="logo" style="font-size:14px">GAFFER</span>
+    <span class="pill">Apache-2.0</span>
+    <span class="pill">QVAC track · Tether Developers Cup 2026</span>
+    <span style="margin-left:auto">forks disclosed: streaming-loop pattern from tetherto/qvac-examples</span>
+  </div>
+</footer>
+<script>
+(function(){
+  var els = [].slice.call(document.querySelectorAll('.reveal'));
+  if(!els.length) return;
+  if(!('IntersectionObserver' in window)){
+    els.forEach(function(el){ el.classList.add('is-visible'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(!entry.isIntersecting) return;
+      var el = entry.target;
+      var siblings = el.parentElement ? [].slice.call(el.parentElement.children).filter(function(c){ return c.classList.contains('reveal') }) : [el];
+      var idx = Math.max(0, siblings.indexOf(el));
+      el.style.transitionDelay = Math.min(idx * 80, 320) + 'ms';
+      el.classList.add('is-visible');
+      io.unobserve(el);
+    });
+  }, {threshold:0.15, rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>

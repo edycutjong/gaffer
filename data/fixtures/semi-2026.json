@@ -1,0 +1,1644 @@
+{
+  "generatedBy": "scripts/seed.js",
+  "deterministic": true,
+  "note": "alternate feed for multi-room tests",
+  "matchId": "semi-2026",
+  "seed": 1998,
+  "minutes": 90,
+  "fixture": {
+    "id": "semi-2026",
+    "competition": "World Cup Final",
+    "home": {
+      "name": "Argentina",
+      "code": "ARG",
+      "players": [
+        "Varela",
+        "Quinteros",
+        "Ibáñez",
+        "Roldán",
+        "Acosta",
+        "Ferreyra",
+        "Maidana",
+        "Salvio",
+        "Corrales",
+        "Bustos",
+        "Peralta"
+      ]
+    },
+    "away": {
+      "name": "France",
+      "code": "FRA",
+      "players": [
+        "Dumont",
+        "Lefebvre",
+        "Moreau",
+        "Carpentier",
+        "Baudry",
+        "Renard",
+        "Vasseur",
+        "Chevalier",
+        "Marchand",
+        "Aubert",
+        "Colin"
+      ]
+    }
+  },
+  "finalScore": {
+    "home": 1,
+    "away": 1
+  },
+  "eventCount": 84,
+  "events": [
+    {
+      "n": 0,
+      "matchId": "semi-2026",
+      "type": "kickoff",
+      "minute": 1,
+      "second": 0,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Acosta",
+        "Quinteros"
+      ],
+      "zone": "deep block",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": true
+    },
+    {
+      "n": 1,
+      "matchId": "semi-2026",
+      "type": "press",
+      "minute": 2,
+      "second": 15,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Salvio",
+        "Salvio"
+      ],
+      "zone": "deep block",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 2,
+      "matchId": "semi-2026",
+      "type": "pass_chain",
+      "minute": 4,
+      "second": 4,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Lefebvre",
+        "Dumont"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 3,
+      "matchId": "semi-2026",
+      "type": "counter",
+      "minute": 5,
+      "second": 22,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Corrales",
+        "Ibáñez"
+      ],
+      "zone": "deep block",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 4,
+      "matchId": "semi-2026",
+      "type": "press",
+      "minute": 6,
+      "second": 0,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Bustos",
+        "Salvio"
+      ],
+      "zone": "edge of the box",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 5,
+      "matchId": "semi-2026",
+      "type": "press",
+      "minute": 8,
+      "second": 37,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Roldán",
+        "Bustos"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 6,
+      "matchId": "semi-2026",
+      "type": "pass_chain",
+      "minute": 9,
+      "second": 8,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Quinteros",
+        "Varela"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 7,
+      "matchId": "semi-2026",
+      "type": "pass_chain",
+      "minute": 10,
+      "second": 13,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Maidana",
+        "Ferreyra"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 8,
+      "matchId": "semi-2026",
+      "type": "shot_on_target",
+      "minute": 12,
+      "second": 20,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Salvio",
+        "Varela"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 10,
+      "matchId": "semi-2026",
+      "type": "counter",
+      "minute": 12,
+      "second": 28,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Lefebvre",
+        "Moreau"
+      ],
+      "zone": "left flank",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 9,
+      "matchId": "semi-2026",
+      "type": "save",
+      "minute": 12,
+      "second": 57,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Chevalier",
+        "Colin"
+      ],
+      "zone": "edge of the box",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 11,
+      "matchId": "semi-2026",
+      "type": "corner",
+      "minute": 14,
+      "second": 34,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Corrales",
+        "Ibáñez"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 12,
+      "matchId": "semi-2026",
+      "type": "pass_chain",
+      "minute": 15,
+      "second": 26,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Carpentier",
+        "Renard"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 13,
+      "matchId": "semi-2026",
+      "type": "yellow_card",
+      "minute": 15,
+      "second": 29,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Bustos",
+        "Corrales"
+      ],
+      "zone": "left half-space",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": true
+    },
+    {
+      "n": 14,
+      "matchId": "semi-2026",
+      "type": "counter",
+      "minute": 16,
+      "second": 23,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Chevalier",
+        "Chevalier"
+      ],
+      "zone": "edge of the box",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 15,
+      "matchId": "semi-2026",
+      "type": "corner",
+      "minute": 17,
+      "second": 14,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Marchand",
+        "Vasseur"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 16,
+      "matchId": "semi-2026",
+      "type": "pass_chain",
+      "minute": 18,
+      "second": 51,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Corrales",
+        "Varela"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 17,
+      "matchId": "semi-2026",
+      "type": "substitution",
+      "minute": 19,
+      "second": 58,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Salvio",
+        "Varela"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 18,
+      "matchId": "semi-2026",
+      "type": "shot_on_target",
+      "minute": 21,
+      "second": 27,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Maidana",
+        "Maidana"
+      ],
+      "zone": "edge of the box",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 19,
+      "matchId": "semi-2026",
+      "type": "shot_on_target",
+      "minute": 21,
+      "second": 43,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Dumont",
+        "Baudry"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 20,
+      "matchId": "semi-2026",
+      "type": "save",
+      "minute": 21,
+      "second": 52,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Peralta",
+        "Roldán"
+      ],
+      "zone": "right half-space",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 21,
+      "matchId": "semi-2026",
+      "type": "pass_chain",
+      "minute": 23,
+      "second": 28,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Ferreyra",
+        "Ferreyra"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 22,
+      "matchId": "semi-2026",
+      "type": "corner",
+      "minute": 25,
+      "second": 46,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Colin",
+        "Dumont"
+      ],
+      "zone": "deep block",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 23,
+      "matchId": "semi-2026",
+      "type": "corner",
+      "minute": 26,
+      "second": 20,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Varela",
+        "Salvio"
+      ],
+      "zone": "left half-space",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 24,
+      "matchId": "semi-2026",
+      "type": "pass_chain",
+      "minute": 29,
+      "second": 20,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Varela",
+        "Maidana"
+      ],
+      "zone": "left flank",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 25,
+      "matchId": "semi-2026",
+      "type": "press",
+      "minute": 30,
+      "second": 33,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Carpentier",
+        "Lefebvre"
+      ],
+      "zone": "edge of the box",
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "priority": false
+    },
+    {
+      "n": 26,
+      "matchId": "semi-2026",
+      "type": "goal",
+      "minute": 31,
+      "second": 15,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Lefebvre",
+        "Lefebvre"
+      ],
+      "zone": "right half-space",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": true
+    },
+    {
+      "n": 27,
+      "matchId": "semi-2026",
+      "type": "offside",
+      "minute": 32,
+      "second": 57,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Varela",
+        "Bustos"
+      ],
+      "zone": "left half-space",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 28,
+      "matchId": "semi-2026",
+      "type": "shot_off_target",
+      "minute": 33,
+      "second": 1,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Acosta",
+        "Ibáñez"
+      ],
+      "zone": "left flank",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 29,
+      "matchId": "semi-2026",
+      "type": "shot_off_target",
+      "minute": 33,
+      "second": 20,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Maidana",
+        "Ferreyra"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 30,
+      "matchId": "semi-2026",
+      "type": "pass_chain",
+      "minute": 34,
+      "second": 58,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Colin",
+        "Moreau"
+      ],
+      "zone": "right half-space",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 31,
+      "matchId": "semi-2026",
+      "type": "foul",
+      "minute": 37,
+      "second": 21,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Dumont",
+        "Baudry"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 32,
+      "matchId": "semi-2026",
+      "type": "pass_chain",
+      "minute": 38,
+      "second": 24,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Aubert",
+        "Renard"
+      ],
+      "zone": "left half-space",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 33,
+      "matchId": "semi-2026",
+      "type": "pass_chain",
+      "minute": 40,
+      "second": 17,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Corrales",
+        "Acosta"
+      ],
+      "zone": "right half-space",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 34,
+      "matchId": "semi-2026",
+      "type": "penalty_awarded",
+      "minute": 42,
+      "second": 59,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Roldán",
+        "Roldán"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": true
+    },
+    {
+      "n": 35,
+      "matchId": "semi-2026",
+      "type": "foul",
+      "minute": 43,
+      "second": 4,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Baudry",
+        "Moreau"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 36,
+      "matchId": "semi-2026",
+      "type": "half_time",
+      "minute": 45,
+      "second": 59,
+      "side": null,
+      "team": null,
+      "players": [],
+      "zone": "central corridor",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": true
+    },
+    {
+      "n": 37,
+      "matchId": "semi-2026",
+      "type": "corner",
+      "minute": 46,
+      "second": 29,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Quinteros",
+        "Peralta"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 38,
+      "matchId": "semi-2026",
+      "type": "counter",
+      "minute": 47,
+      "second": 53,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Vasseur",
+        "Renard"
+      ],
+      "zone": "left flank",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 39,
+      "matchId": "semi-2026",
+      "type": "foul",
+      "minute": 48,
+      "second": 2,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Corrales",
+        "Peralta"
+      ],
+      "zone": "edge of the box",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 40,
+      "matchId": "semi-2026",
+      "type": "counter",
+      "minute": 48,
+      "second": 35,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Acosta",
+        "Quinteros"
+      ],
+      "zone": "right half-space",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 41,
+      "matchId": "semi-2026",
+      "type": "pass_chain",
+      "minute": 49,
+      "second": 25,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Maidana",
+        "Ferreyra"
+      ],
+      "zone": "right half-space",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 42,
+      "matchId": "semi-2026",
+      "type": "pass_chain",
+      "minute": 50,
+      "second": 6,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Corrales",
+        "Peralta"
+      ],
+      "zone": "deep block",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 43,
+      "matchId": "semi-2026",
+      "type": "press",
+      "minute": 50,
+      "second": 46,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Quinteros",
+        "Ibáñez"
+      ],
+      "zone": "right half-space",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 44,
+      "matchId": "semi-2026",
+      "type": "pass_chain",
+      "minute": 52,
+      "second": 19,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Vasseur",
+        "Carpentier"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 45,
+      "matchId": "semi-2026",
+      "type": "foul",
+      "minute": 55,
+      "second": 53,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Lefebvre",
+        "Baudry"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 47,
+      "matchId": "semi-2026",
+      "type": "offside",
+      "minute": 56,
+      "second": 29,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Acosta",
+        "Maidana"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 46,
+      "matchId": "semi-2026",
+      "type": "press",
+      "minute": 56,
+      "second": 57,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Acosta",
+        "Ferreyra"
+      ],
+      "zone": "left flank",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 48,
+      "matchId": "semi-2026",
+      "type": "shot_on_target",
+      "minute": 57,
+      "second": 40,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Marchand",
+        "Renard"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 49,
+      "matchId": "semi-2026",
+      "type": "corner",
+      "minute": 58,
+      "second": 34,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Colin",
+        "Baudry"
+      ],
+      "zone": "right half-space",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 50,
+      "matchId": "semi-2026",
+      "type": "foul",
+      "minute": 59,
+      "second": 56,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Marchand",
+        "Aubert"
+      ],
+      "zone": "edge of the box",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 51,
+      "matchId": "semi-2026",
+      "type": "pass_chain",
+      "minute": 62,
+      "second": 29,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Ferreyra",
+        "Ferreyra"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 53,
+      "matchId": "semi-2026",
+      "type": "press",
+      "minute": 63,
+      "second": 47,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Lefebvre",
+        "Lefebvre"
+      ],
+      "zone": "right half-space",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 52,
+      "matchId": "semi-2026",
+      "type": "counter",
+      "minute": 63,
+      "second": 55,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Moreau",
+        "Marchand"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 54,
+      "matchId": "semi-2026",
+      "type": "yellow_card",
+      "minute": 64,
+      "second": 42,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Renard",
+        "Colin"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": true
+    },
+    {
+      "n": 55,
+      "matchId": "semi-2026",
+      "type": "press",
+      "minute": 65,
+      "second": 45,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Aubert",
+        "Baudry"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 56,
+      "matchId": "semi-2026",
+      "type": "foul",
+      "minute": 66,
+      "second": 42,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Ibáñez",
+        "Peralta"
+      ],
+      "zone": "left flank",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 57,
+      "matchId": "semi-2026",
+      "type": "var_check",
+      "minute": 68,
+      "second": 58,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Roldán",
+        "Ibáñez"
+      ],
+      "zone": "left half-space",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": true
+    },
+    {
+      "n": 59,
+      "matchId": "semi-2026",
+      "type": "press",
+      "minute": 69,
+      "second": 17,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Varela",
+        "Maidana"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 58,
+      "matchId": "semi-2026",
+      "type": "var_check",
+      "minute": 69,
+      "second": 52,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Roldán",
+        "Maidana"
+      ],
+      "zone": "left flank",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": true
+    },
+    {
+      "n": 62,
+      "matchId": "semi-2026",
+      "type": "press",
+      "minute": 70,
+      "second": 29,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Maidana",
+        "Bustos"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 60,
+      "matchId": "semi-2026",
+      "type": "penalty_awarded",
+      "minute": 70,
+      "second": 34,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Corrales",
+        "Bustos"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "priority": true
+    },
+    {
+      "n": 61,
+      "matchId": "semi-2026",
+      "type": "goal",
+      "minute": 70,
+      "second": 51,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Corrales",
+        "Ibáñez"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": true,
+      "fromPenalty": true
+    },
+    {
+      "n": 63,
+      "matchId": "semi-2026",
+      "type": "counter",
+      "minute": 71,
+      "second": 12,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Lefebvre",
+        "Vasseur"
+      ],
+      "zone": "left half-space",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 64,
+      "matchId": "semi-2026",
+      "type": "offside",
+      "minute": 71,
+      "second": 54,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Bustos",
+        "Varela"
+      ],
+      "zone": "right half-space",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 65,
+      "matchId": "semi-2026",
+      "type": "press",
+      "minute": 72,
+      "second": 11,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Acosta",
+        "Varela"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 66,
+      "matchId": "semi-2026",
+      "type": "shot_off_target",
+      "minute": 73,
+      "second": 8,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Dumont",
+        "Aubert"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 67,
+      "matchId": "semi-2026",
+      "type": "pass_chain",
+      "minute": 74,
+      "second": 27,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Bustos",
+        "Maidana"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 68,
+      "matchId": "semi-2026",
+      "type": "pass_chain",
+      "minute": 76,
+      "second": 33,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Corrales",
+        "Varela"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 69,
+      "matchId": "semi-2026",
+      "type": "foul",
+      "minute": 77,
+      "second": 59,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Renard",
+        "Marchand"
+      ],
+      "zone": "left half-space",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 70,
+      "matchId": "semi-2026",
+      "type": "press",
+      "minute": 78,
+      "second": 13,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Marchand",
+        "Vasseur"
+      ],
+      "zone": "edge of the box",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 71,
+      "matchId": "semi-2026",
+      "type": "counter",
+      "minute": 79,
+      "second": 23,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Ferreyra",
+        "Varela"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 72,
+      "matchId": "semi-2026",
+      "type": "counter",
+      "minute": 79,
+      "second": 29,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Chevalier",
+        "Moreau"
+      ],
+      "zone": "right half-space",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 73,
+      "matchId": "semi-2026",
+      "type": "foul",
+      "minute": 81,
+      "second": 9,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Ferreyra",
+        "Varela"
+      ],
+      "zone": "deep block",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 74,
+      "matchId": "semi-2026",
+      "type": "press",
+      "minute": 82,
+      "second": 44,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Vasseur",
+        "Chevalier"
+      ],
+      "zone": "edge of the box",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 75,
+      "matchId": "semi-2026",
+      "type": "press",
+      "minute": 84,
+      "second": 8,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Moreau",
+        "Aubert"
+      ],
+      "zone": "midfield circle",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 76,
+      "matchId": "semi-2026",
+      "type": "pass_chain",
+      "minute": 84,
+      "second": 46,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Maidana",
+        "Corrales"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 77,
+      "matchId": "semi-2026",
+      "type": "pass_chain",
+      "minute": 85,
+      "second": 22,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Lefebvre",
+        "Lefebvre"
+      ],
+      "zone": "deep block",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 78,
+      "matchId": "semi-2026",
+      "type": "foul",
+      "minute": 86,
+      "second": 43,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Peralta",
+        "Maidana"
+      ],
+      "zone": "central corridor",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 79,
+      "matchId": "semi-2026",
+      "type": "pass_chain",
+      "minute": 87,
+      "second": 40,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Ferreyra",
+        "Maidana"
+      ],
+      "zone": "edge of the box",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 80,
+      "matchId": "semi-2026",
+      "type": "press",
+      "minute": 88,
+      "second": 48,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Ferreyra",
+        "Corrales"
+      ],
+      "zone": "right flank",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 82,
+      "matchId": "semi-2026",
+      "type": "counter",
+      "minute": 90,
+      "second": 4,
+      "side": "away",
+      "team": "France",
+      "players": [
+        "Dumont",
+        "Marchand"
+      ],
+      "zone": "left half-space",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 81,
+      "matchId": "semi-2026",
+      "type": "foul",
+      "minute": 90,
+      "second": 8,
+      "side": "home",
+      "team": "Argentina",
+      "players": [
+        "Ibáñez",
+        "Quinteros"
+      ],
+      "zone": "left half-space",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": false
+    },
+    {
+      "n": 83,
+      "matchId": "semi-2026",
+      "type": "full_time",
+      "minute": 90,
+      "second": 59,
+      "side": null,
+      "team": null,
+      "players": [],
+      "zone": "central corridor",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "priority": true
+    }
+  ]
+}
