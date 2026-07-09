@@ -19,7 +19,7 @@ flowchart LR
   end
   WIRE["protocol.js frames<br/>over Hyperswarm socket<br/>Noise Secretstream E2E"] --> PN
   DHT(["HyperDHT<br/>topic = sha256 of match id"]) -.discovery.- RT & PN
-  DRIVE[("Hyperdrive<br/>pear:// GGUF")] -.modelshare.js.-> LE & PE
+  DRIVE[("Hyperdrive<br/>pear:// GGUF")] -.->|modelshare.js| LE & PE
   RT --> MET["metrics.js<br/>tok/s · p50/p95"] --> HUD["HUD gauge / bench / README numbers"]
 ```
 
