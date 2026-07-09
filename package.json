@@ -1,6 +1,6 @@
 {
   "name": "gaffer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Offline AI football co-commentator that runs on your peers' hardware — QVAC on-device inference with P2P offload over the Pear stack. No cloud, no API keys.",
   "type": "module",
   "main": "app/index.html",
