@@ -1,14 +1,16 @@
-<p align="center"><img src="docs/assets/icon-animated.svg" width="144" height="144" alt="Gaffer"></p>
+
+
+<div align="center">
+
+<img src="docs/assets/icon-animated.svg" width="144" height="144" alt="Gaffer">
 
 # Gaffer — the offline AI co-commentator that runs on your peers' hardware
 
-> **Problem:** expert match commentary dies the moment the network drops — and the fans who most need an explainer carry the weakest phones.
-> **Solution:** Gaffer streams tactical commentary from a model **on your own device** (QVAC), and when your device is too weak it **borrows a laptop peer's compute over an encrypted P2P link** (Pear stack) — zero cloud, zero API keys.
-> **Built:** a working P2P inference-offload runtime with mid-sentence failover, `pear://` model sharing, a broadcast-style HUD, a reproducible benchmark, an offline-proof script and **220 passing tests** (incl. real-swarm integration).
+**Problem:** expert match commentary dies the moment the network drops — and the fans who most need an explainer carry the weakest phones.<br/>
+**Solution:** Gaffer streams tactical commentary from a model **on your own device** (QVAC), and when your device is too weak it **borrows a laptop peer's compute over an encrypted P2P link** (Pear stack) — zero cloud, zero API keys.<br/>
+**Built:** a working P2P inference-offload runtime with mid-sentence failover, `pear://` model sharing, a broadcast-style HUD, a reproducible benchmark, an offline-proof script and **220 passing tests** (incl. real-swarm integration).
 
-<div align="center">
-  <!-- animated SVG (SMIL) — animates in the rendered README; PNG fallback: docs/assets/readme-hero.png -->
-  <img src="docs/assets/readme-hero-animated.svg" alt="Gaffer — offline AI co-commentator with P2P inference offload" width="100%">
+<img src="docs/assets/readme-hero-animated.svg" alt="Gaffer — offline AI co-commentator with P2P inference offload" width="100%">
 
   <br/><br/>
 
