@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/edycutjong/gaffer/compare/v1.1.1...v1.1.2) (2026-08-22)
+
+
+### Bug Fixes
+
+* **deps:** resolve 1 dependency vulnerabilities via lockfile ([d0253c3](https://github.com/edycutjong/gaffer/commit/d0253c3fa8495e2c1ba88100eea47b2458ca6611))
+
 ## [1.1.1](https://github.com/edycutjong/gaffer/compare/v1.1.0...v1.1.1) (2026-07-09)
 
 
