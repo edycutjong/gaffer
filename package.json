@@ -47,7 +47,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "eslint": "^10.8.1",
-    "hyperdht": "^6.33.1"
+    "hyperdht": "^6.33.2"
   },
   "engines": {
     "node": ">=20"
